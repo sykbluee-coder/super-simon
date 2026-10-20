@@ -7,7 +7,7 @@ public class inicio : MonoBehaviour
     public void Jugar()
 
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("jackelyn");
 
     }
     public void Salir()
