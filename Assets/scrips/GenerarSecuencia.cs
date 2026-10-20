@@ -35,7 +35,7 @@ public class GenerarSecuencia : MonoBehaviour
         secuencia[indiceActual] = indiceAleatorio;
         for (int i = 0;i <= indiceActual;i++)
         {
-            
+            botones[secuencia[i]].GetComponent<AudioSource>().Play();
             botones[secuencia[i]].interactable = true;
             yield return new WaitForSeconds(1);
             botones[secuencia[i]].interactable = false;
