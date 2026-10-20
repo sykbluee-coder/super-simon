@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class GenerarSecuencia : MonoBehaviour
 {
     [SerializeField] Button[] botones;
-    [SerializeField] public int[] secuencia = {0, 0, 0, 0, 0};
+    [SerializeField] public int[] secuencia = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
     [SerializeField] public int indiceActual;
     [SerializeField] public bool puedeJugar;
     [SerializeField] int random;
@@ -31,7 +31,8 @@ public class GenerarSecuencia : MonoBehaviour
         {
             botones[i].interactable = false;
         }
-
+        int indiceAleatorio = Random.Range(0, botones.Length);
+        secuencia[indiceActual] = indiceAleatorio;
         for (int i = 0;i <= indiceActual;i++)
         {
             
