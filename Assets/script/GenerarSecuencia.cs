@@ -21,7 +21,7 @@ public class GenerarSecuencia : MonoBehaviour
     {
         
     }
-    IEnumerator Secuencia()
+  public  IEnumerator Secuencia()
     {
         puedeJugar = false;
         yield return new WaitForSeconds(0.5f);
